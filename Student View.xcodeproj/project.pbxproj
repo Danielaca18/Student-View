@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA83F36F29B9A7F100A8D359 /* Student View.doccarchive in Resources */ = {isa = PBXBuildFile; fileRef = DA83F36E29B9A7F100A8D359 /* Student View.doccarchive */; };
+		DA8723E629B7F45100E55DD9 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8723E529B7F45100E55DD9 /* ScheduleView.swift */; };
+		DA8723EB29B81FF500E55DD9 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8723EA29B81FF500E55DD9 /* ImagePickerView.swift */; };
+		DA8723ED29B8213A00E55DD9 /* ScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8723EC29B8213A00E55DD9 /* ScheduleViewModel.swift */; };
+		DA8723EF29B821A300E55DD9 /* ScheduleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8723EE29B821A300E55DD9 /* ScheduleModel.swift */; };
+		DA88340F29B7007D005AD207 /* CourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA88340D29B7007D005AD207 /* CourseModel.swift */; };
+		DA88341229B70113005AD207 /* CourseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA88341129B70113005AD207 /* CourseViewModel.swift */; };
+		DA88341729B7059F005AD207 /* CourseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA88341629B7059F005AD207 /* CourseListView.swift */; };
+		DA88341929B707F9005AD207 /* CourseRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA88341829B707F9005AD207 /* CourseRowView.swift */; };
+		DA88341B29B70ABA005AD207 /* AddCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA88341A29B70ABA005AD207 /* AddCourseView.swift */; };
+		DA88341D29B71584005AD207 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA88341C29B71584005AD207 /* SceneDelegate.swift */; };
 		DAF633D829B5CFAF00048CFD /* Student_ViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF633D729B5CFAF00048CFD /* Student_ViewApp.swift */; };
 		DAF633DA29B5CFAF00048CFD /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF633D929B5CFAF00048CFD /* Persistence.swift */; };
 		DAF633DD29B5CFAF00048CFD /* Student_View.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DAF633DB29B5CFAF00048CFD /* Student_View.xcdatamodeld */; };
@@ -16,6 +27,11 @@
 		DAF633EF29B5CFB200048CFD /* Student_ViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF633EE29B5CFB200048CFD /* Student_ViewTests.swift */; };
 		DAF633F929B5CFB200048CFD /* Student_ViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF633F829B5CFB200048CFD /* Student_ViewUITests.swift */; };
 		DAF633FB29B5CFB200048CFD /* Student_ViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF633FA29B5CFB200048CFD /* Student_ViewUITestsLaunchTests.swift */; };
+		DAF6340B29B5D39A00048CFD /* AssignmentRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF6340A29B5D39A00048CFD /* AssignmentRowView.swift */; };
+		DAF6340E29B5D55700048CFD /* AssignmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF6340C29B5D55700048CFD /* AssignmentModel.swift */; };
+		DAF6341129B5D73600048CFD /* AssignmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF6341029B5D73600048CFD /* AssignmentViewModel.swift */; };
+		DAF6341429B5D9A300048CFD /* AddAssignmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF6341329B5D9A300048CFD /* AddAssignmentView.swift */; };
+		DAF6341629B5DB5A00048CFD /* AssignmentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF6341529B5DB5A00048CFD /* AssignmentListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +52,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA83F36E29B9A7F100A8D359 /* Student View.doccarchive */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Student View.doccarchive"; sourceTree = SOURCE_ROOT; };
+		DA8723E529B7F45100E55DD9 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		DA8723EA29B81FF500E55DD9 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		DA8723EC29B8213A00E55DD9 /* ScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewModel.swift; sourceTree = "<group>"; };
+		DA8723EE29B821A300E55DD9 /* ScheduleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleModel.swift; sourceTree = "<group>"; };
+		DA88340D29B7007D005AD207 /* CourseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseModel.swift; sourceTree = "<group>"; };
+		DA88341129B70113005AD207 /* CourseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseViewModel.swift; sourceTree = "<group>"; };
+		DA88341629B7059F005AD207 /* CourseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListView.swift; sourceTree = "<group>"; };
+		DA88341829B707F9005AD207 /* CourseRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRowView.swift; sourceTree = "<group>"; };
+		DA88341A29B70ABA005AD207 /* AddCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCourseView.swift; sourceTree = "<group>"; };
+		DA88341C29B71584005AD207 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DAF633D429B5CFAF00048CFD /* Student View.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Student View.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAF633D729B5CFAF00048CFD /* Student_ViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student_ViewApp.swift; sourceTree = "<group>"; };
 		DAF633D929B5CFAF00048CFD /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -49,6 +76,11 @@
 		DAF633F429B5CFB200048CFD /* Student ViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Student ViewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAF633F829B5CFB200048CFD /* Student_ViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student_ViewUITests.swift; sourceTree = "<group>"; };
 		DAF633FA29B5CFB200048CFD /* Student_ViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student_ViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DAF6340A29B5D39A00048CFD /* AssignmentRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentRowView.swift; sourceTree = "<group>"; };
+		DAF6340C29B5D55700048CFD /* AssignmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentModel.swift; sourceTree = "<group>"; };
+		DAF6341029B5D73600048CFD /* AssignmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentViewModel.swift; sourceTree = "<group>"; };
+		DAF6341329B5D9A300048CFD /* AddAssignmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAssignmentView.swift; sourceTree = "<group>"; };
+		DAF6341529B5DB5A00048CFD /* AssignmentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +108,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA8723E229B7F21D00E55DD9 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				DA8723E529B7F45100E55DD9 /* ScheduleView.swift */,
+				DA8723EA29B81FF500E55DD9 /* ImagePickerView.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		DA88340829B6FCC8005AD207 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DAF6340C29B5D55700048CFD /* AssignmentModel.swift */,
+				DA88340D29B7007D005AD207 /* CourseModel.swift */,
+				DA8723EE29B821A300E55DD9 /* ScheduleModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DA88341329B7049B005AD207 /* Courses */ = {
+			isa = PBXGroup;
+			children = (
+				DA88341629B7059F005AD207 /* CourseListView.swift */,
+				DA88341829B707F9005AD207 /* CourseRowView.swift */,
+				DA88341A29B70ABA005AD207 /* AddCourseView.swift */,
+			);
+			path = Courses;
+			sourceTree = "<group>";
+		};
 		DAF633CB29B5CFAF00048CFD = {
 			isa = PBXGroup;
 			children = (
@@ -100,12 +161,15 @@
 			isa = PBXGroup;
 			children = (
 				DAF633D729B5CFAF00048CFD /* Student_ViewApp.swift */,
-				DAF633D929B5CFAF00048CFD /* Persistence.swift */,
-				DAF633DE29B5CFAF00048CFD /* ContentView.swift */,
 				DAF633E029B5CFB200048CFD /* Assets.xcassets */,
 				DAF633E229B5CFB200048CFD /* Student_View.entitlements */,
-				DAF633DB29B5CFAF00048CFD /* Student_View.xcdatamodeld */,
 				DAF633E329B5CFB200048CFD /* Preview Content */,
+				DAF6340929B5D05300048CFD /* Core Data */,
+				DA88340829B6FCC8005AD207 /* Models */,
+				DAF6340729B5D03D00048CFD /* Views */,
+				DAF6340829B5D04400048CFD /* View Models */,
+				DA88341C29B71584005AD207 /* SceneDelegate.swift */,
+				DA83F36E29B9A7F100A8D359 /* Student View.doccarchive */,
 			);
 			path = "Student View";
 			sourceTree = "<group>";
@@ -133,6 +197,46 @@
 				DAF633FA29B5CFB200048CFD /* Student_ViewUITestsLaunchTests.swift */,
 			);
 			path = "Student ViewUITests";
+			sourceTree = "<group>";
+		};
+		DAF6340729B5D03D00048CFD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DA8723E229B7F21D00E55DD9 /* Schedule */,
+				DAF6341229B5D98900048CFD /* Assignments */,
+				DA88341329B7049B005AD207 /* Courses */,
+				DAF633DE29B5CFAF00048CFD /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DAF6340829B5D04400048CFD /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				DAF6341029B5D73600048CFD /* AssignmentViewModel.swift */,
+				DA88341129B70113005AD207 /* CourseViewModel.swift */,
+				DA8723EC29B8213A00E55DD9 /* ScheduleViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		DAF6340929B5D05300048CFD /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				DAF633D929B5CFAF00048CFD /* Persistence.swift */,
+				DAF633DB29B5CFAF00048CFD /* Student_View.xcdatamodeld */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		DAF6341229B5D98900048CFD /* Assignments */ = {
+			isa = PBXGroup;
+			children = (
+				DAF6340A29B5D39A00048CFD /* AssignmentRowView.swift */,
+				DAF6341329B5D9A300048CFD /* AddAssignmentView.swift */,
+				DAF6341529B5DB5A00048CFD /* AssignmentListView.swift */,
+			);
+			path = Assignments;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +345,7 @@
 			files = (
 				DAF633E529B5CFB200048CFD /* Preview Assets.xcassets in Resources */,
 				DAF633E129B5CFB200048CFD /* Assets.xcassets in Resources */,
+				DA83F36F29B9A7F100A8D359 /* Student View.doccarchive in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,9 +371,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAF633DD29B5CFAF00048CFD /* Student_View.xcdatamodeld in Sources */,
+				DA88341929B707F9005AD207 /* CourseRowView.swift in Sources */,
+				DA88340F29B7007D005AD207 /* CourseModel.swift in Sources */,
+				DA88341B29B70ABA005AD207 /* AddCourseView.swift in Sources */,
+				DA8723EB29B81FF500E55DD9 /* ImagePickerView.swift in Sources */,
+				DA88341229B70113005AD207 /* CourseViewModel.swift in Sources */,
+				DA8723E629B7F45100E55DD9 /* ScheduleView.swift in Sources */,
+				DAF6341129B5D73600048CFD /* AssignmentViewModel.swift in Sources */,
 				DAF633D829B5CFAF00048CFD /* Student_ViewApp.swift in Sources */,
+				DA88341D29B71584005AD207 /* SceneDelegate.swift in Sources */,
+				DA8723EF29B821A300E55DD9 /* ScheduleModel.swift in Sources */,
+				DA8723ED29B8213A00E55DD9 /* ScheduleViewModel.swift in Sources */,
+				DAF6340E29B5D55700048CFD /* AssignmentModel.swift in Sources */,
+				DAF6341629B5DB5A00048CFD /* AssignmentListView.swift in Sources */,
 				DAF633DF29B5CFAF00048CFD /* ContentView.swift in Sources */,
+				DA88341729B7059F005AD207 /* CourseListView.swift in Sources */,
+				DAF6341429B5D9A300048CFD /* AddAssignmentView.swift in Sources */,
 				DAF633DA29B5CFAF00048CFD /* Persistence.swift in Sources */,
+				DAF6340B29B5D39A00048CFD /* AssignmentRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +547,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Photo library access required for schedule selection";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -437,7 +558,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
@@ -465,6 +586,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Photo library access required for schedule selection";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -475,7 +597,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;

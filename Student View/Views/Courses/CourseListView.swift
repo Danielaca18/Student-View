@@ -7,14 +7,46 @@
 
 import SwiftUI
 
+
+/// View representing the list of courses stored in coredata
 struct CourseListView: View {
+    @Environment(\.managedObjectContext) private var viewContext
+    @ObservedObject private var viewModel = CourseViewModel()
+    
+    @State private var showingAddCourse = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack {
+                Text("Cumulative GPA: \(viewModel.cGpa, specifier: "%.2f")")
+                    .font(.headline)
+                    .padding()
+                
+                List {
+                    ForEach(viewModel.courses, id: \.id) { course in
+                        CourseRowView(course: course)
+                            .environmentObject(viewModel)
+                    }
+                    .onDelete(perform: viewModel.deleteCourse)
+                }
+                .navigationBarTitle("Courses")
+                .navigationBarItems(trailing: Button(action: {
+                    showingAddCourse = true
+                }) {
+                    Image(systemName: "plus")
+                })
+            }
+        }
+        .sheet(isPresented: $showingAddCourse) {
+            AddCourseView()
+                .environment(\.managedObjectContext, viewContext)
+                .environmentObject(viewModel)
+        }.onDisappear()
     }
 }
 
 struct CourseListView_Previews: PreviewProvider {
     static var previews: some View {
-        CourseListView()
+        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }

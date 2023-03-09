@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// View representing assignments and handling user interaction
 struct AssignmentRowView: View {
     let assignment: Assignment
     @EnvironmentObject var viewModel: AssignmentViewModel
@@ -14,9 +15,9 @@ struct AssignmentRowView: View {
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
-                Text(assignment.name)
+                Text(assignment.name ?? "")
                     .font(.headline)
-                Text(assignment.dueDate, style: .date)
+                Text(assignment.dueDate ?? Date(), style: .date)
                     .foregroundColor(.secondary)
             }
             Spacer()
@@ -29,6 +30,9 @@ struct AssignmentRowView: View {
             viewModel.toggleAssignmentCompletion(at: viewModel.assignments.firstIndex(of: assignment)!)
         }
         .onAppear {
+            viewModel.fetchAssignments()
+        }
+        .onDisappear {
             viewModel.fetchAssignments()
         }
     }

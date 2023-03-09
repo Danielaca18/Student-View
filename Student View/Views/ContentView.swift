@@ -12,13 +12,27 @@ struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
+        sortDescriptors: [NSSortDescriptor(keyPath: \Assignment.dueDate, ascending: true)],
         animation: .default)
-    private var items: FetchedResults<Item>
+    private var assignments: FetchedResults<Assignment>
 
     var body: some View {
         TabView {
-            
+            ScheduleView()
+                .environment(\.managedObjectContext, viewContext)
+                .tabItem {
+                    Label("Schedule", systemImage: "calendar.circle.fill")
+                }
+            AssignmentListView()
+                .environment(\.managedObjectContext, viewContext)
+                .tabItem {
+                    Label("Assignments", systemImage: "tray.circle.fill")
+                }
+            CourseListView()
+                .environment(\.managedObjectContext, viewContext)
+                .tabItem {
+                    Label("Courses", systemImage: "book.closed.circle.fill")
+                }
         }
     }
 }

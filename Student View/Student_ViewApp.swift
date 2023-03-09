@@ -8,6 +8,7 @@
 import SwiftUI
 
 @main
+/// Application used to manage basic information relevant to students
 struct Student_ViewApp: App {
     let persistenceController = PersistenceController.shared
 
