@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// View representing the list of pdfs stored in coredata
 struct SyllabusView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @State private var showingDocumentPicker = false

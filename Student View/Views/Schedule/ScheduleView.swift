@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// View representing the schedule object stored in coredata
 struct ScheduleView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @State private var showingChangeSchedule = false

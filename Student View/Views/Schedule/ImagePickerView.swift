@@ -8,6 +8,7 @@
 import UIKit
 import SwiftUI
 
+/// View responsible for user photo selection
 struct ImagePickerView : UIViewControllerRepresentable {
     @Environment(\.presentationMode) var isPresented
     @EnvironmentObject private var viewModel: ScheduleViewModel
@@ -22,6 +23,4 @@ struct ImagePickerView : UIViewControllerRepresentable {
     func updateUIViewController(_ uiViewController: UIImagePickerController, context: Context) {
 
     }
-    
-
 }

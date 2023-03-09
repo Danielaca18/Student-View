@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// View containing pdf kit view
 struct PDFReadView: View {
     @EnvironmentObject private var viewModel: PDFViewModel
     let pdf: PDF

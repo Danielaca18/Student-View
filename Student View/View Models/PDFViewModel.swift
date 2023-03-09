@@ -10,7 +10,7 @@ import SwiftUI
 import CoreData
 import UIKit
 
-///
+/// Object manages pdf model and facilitates interaction with view
 class PDFViewModel: NSObject, UINavigationControllerDelegate, UIDocumentPickerDelegate,
 ObservableObject {
     @Published var pdfs: [PDF] = []
@@ -48,6 +48,12 @@ ObservableObject {
         picker!.isPresented.wrappedValue.dismiss()
     }
     
+    /**
+     * adds pdfs to coredata model
+     * - Parameters:
+     *   - name: name of pdf to be added
+     *   - file: binary data of pdf to be added
+     */
     func addPDF(name: String, file: Data?) {
         let pdf = PDF(context: viewContext)
         pdf.name = name
@@ -56,6 +62,11 @@ ObservableObject {
         saveContext()
     }
     
+    /**
+     * removes pdf from coredata model
+     * - Parameters:
+     *  - indexSet: the set of indices to remove from the fetched pdf list
+     */
     func deletePDF(indexSet: IndexSet) {
         withAnimation {
             indexSet.forEach { index in
@@ -67,6 +78,9 @@ ObservableObject {
         saveContext()
     }
     
+    /**
+     * fetches and stores pdf object from coredata
+     */
     func fetchPDF() {
         do {
             pdfs = try viewContext.fetch(PDF.fetchRequest())
@@ -75,10 +89,18 @@ ObservableObject {
         }
     }
     
+    /**
+     * stores document picker view into object for later use
+     * - Parameters:
+     *  - picker: The document picker view which will be displayed to user on addition of a schedule
+     */
     func setPicker(picker: DocumentPickerView) {
         self.picker = picker
     }
     
+    /**
+     * saves any local changes into persistent stores
+     */
     func saveContext() {
         objectWillChange.send()
         if isPreview {

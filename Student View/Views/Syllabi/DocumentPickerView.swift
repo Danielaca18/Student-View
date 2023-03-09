@@ -9,6 +9,7 @@ import UIKit
 import SwiftUI
 import UniformTypeIdentifiers
 
+/// View responsible for prompting user document selection
 struct DocumentPickerView : UIViewControllerRepresentable {
     @Environment(\.presentationMode) var isPresented
     @EnvironmentObject private var viewModel: PDFViewModel

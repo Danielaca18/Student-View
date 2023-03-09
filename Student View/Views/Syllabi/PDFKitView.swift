@@ -8,6 +8,7 @@
 import SwiftUI
 import PDFKit
 
+/// View responsible for displaying pdf documents to users
 struct PDFKitView: UIViewRepresentable {
     let data: Data
     
