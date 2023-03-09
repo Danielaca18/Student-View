@@ -9,7 +9,6 @@ import UIKit
 import SwiftUI
 
 struct ImagePickerView : UIViewControllerRepresentable {
-    //private var selectedImage: UIImage?
     @Environment(\.presentationMode) var isPresented
     @EnvironmentObject private var viewModel: ScheduleViewModel
     

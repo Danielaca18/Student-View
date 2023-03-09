@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA6BDB4E29B9B6CA009837A9 /* SyllabusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6BDB4D29B9B6CA009837A9 /* SyllabusView.swift */; };
+		DA6BDB5229B9C212009837A9 /* PDFModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6BDB5129B9C212009837A9 /* PDFModel.swift */; };
+		DA6BDB5429B9C470009837A9 /* DocumentPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6BDB5329B9C470009837A9 /* DocumentPickerView.swift */; };
+		DA6BDB5629B9CB3D009837A9 /* PDFViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6BDB5529B9CB3D009837A9 /* PDFViewModel.swift */; };
+		DA6BDB5A29B9DECF009837A9 /* PDFKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6BDB5929B9DECF009837A9 /* PDFKitView.swift */; };
+		DA6BDB5C29B9DF98009837A9 /* PDFRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6BDB5B29B9DF98009837A9 /* PDFRowView.swift */; };
 		DA83F36F29B9A7F100A8D359 /* Student View.doccarchive in Resources */ = {isa = PBXBuildFile; fileRef = DA83F36E29B9A7F100A8D359 /* Student View.doccarchive */; };
 		DA8723E629B7F45100E55DD9 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8723E529B7F45100E55DD9 /* ScheduleView.swift */; };
 		DA8723EB29B81FF500E55DD9 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8723EA29B81FF500E55DD9 /* ImagePickerView.swift */; };
@@ -52,7 +58,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DA83F36E29B9A7F100A8D359 /* Student View.doccarchive */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Student View.doccarchive"; sourceTree = SOURCE_ROOT; };
+		DA6BDB4D29B9B6CA009837A9 /* SyllabusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyllabusView.swift; sourceTree = "<group>"; };
+		DA6BDB5129B9C212009837A9 /* PDFModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFModel.swift; sourceTree = "<group>"; };
+		DA6BDB5329B9C470009837A9 /* DocumentPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPickerView.swift; sourceTree = "<group>"; };
+		DA6BDB5529B9CB3D009837A9 /* PDFViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewModel.swift; sourceTree = "<group>"; };
+		DA6BDB5929B9DECF009837A9 /* PDFKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFKitView.swift; sourceTree = "<group>"; };
+		DA6BDB5B29B9DF98009837A9 /* PDFRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFRowView.swift; sourceTree = "<group>"; };
+		DA83F36E29B9A7F100A8D359 /* Student View.doccarchive */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "Student View.doccarchive"; sourceTree = SOURCE_ROOT; };
 		DA8723E529B7F45100E55DD9 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
 		DA8723EA29B81FF500E55DD9 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		DA8723EC29B8213A00E55DD9 /* ScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewModel.swift; sourceTree = "<group>"; };
@@ -108,6 +120,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA6BDB4C29B9B6A6009837A9 /* Syllabi */ = {
+			isa = PBXGroup;
+			children = (
+				DA6BDB4D29B9B6CA009837A9 /* SyllabusView.swift */,
+				DA6BDB5329B9C470009837A9 /* DocumentPickerView.swift */,
+				DA6BDB5929B9DECF009837A9 /* PDFKitView.swift */,
+				DA6BDB5B29B9DF98009837A9 /* PDFRowView.swift */,
+			);
+			path = Syllabi;
+			sourceTree = "<group>";
+		};
 		DA8723E229B7F21D00E55DD9 /* Schedule */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +146,7 @@
 				DAF6340C29B5D55700048CFD /* AssignmentModel.swift */,
 				DA88340D29B7007D005AD207 /* CourseModel.swift */,
 				DA8723EE29B821A300E55DD9 /* ScheduleModel.swift */,
+				DA6BDB5129B9C212009837A9 /* PDFModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -202,6 +226,7 @@
 		DAF6340729B5D03D00048CFD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DA6BDB4C29B9B6A6009837A9 /* Syllabi */,
 				DA8723E229B7F21D00E55DD9 /* Schedule */,
 				DAF6341229B5D98900048CFD /* Assignments */,
 				DA88341329B7049B005AD207 /* Courses */,
@@ -216,6 +241,7 @@
 				DAF6341029B5D73600048CFD /* AssignmentViewModel.swift */,
 				DA88341129B70113005AD207 /* CourseViewModel.swift */,
 				DA8723EC29B8213A00E55DD9 /* ScheduleViewModel.swift */,
+				DA6BDB5529B9CB3D009837A9 /* PDFViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -370,20 +396,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA6BDB5A29B9DECF009837A9 /* PDFKitView.swift in Sources */,
 				DAF633DD29B5CFAF00048CFD /* Student_View.xcdatamodeld in Sources */,
+				DA6BDB5429B9C470009837A9 /* DocumentPickerView.swift in Sources */,
 				DA88341929B707F9005AD207 /* CourseRowView.swift in Sources */,
 				DA88340F29B7007D005AD207 /* CourseModel.swift in Sources */,
+				DA6BDB5629B9CB3D009837A9 /* PDFViewModel.swift in Sources */,
 				DA88341B29B70ABA005AD207 /* AddCourseView.swift in Sources */,
 				DA8723EB29B81FF500E55DD9 /* ImagePickerView.swift in Sources */,
 				DA88341229B70113005AD207 /* CourseViewModel.swift in Sources */,
 				DA8723E629B7F45100E55DD9 /* ScheduleView.swift in Sources */,
+				DA6BDB4E29B9B6CA009837A9 /* SyllabusView.swift in Sources */,
 				DAF6341129B5D73600048CFD /* AssignmentViewModel.swift in Sources */,
 				DAF633D829B5CFAF00048CFD /* Student_ViewApp.swift in Sources */,
+				DA6BDB5C29B9DF98009837A9 /* PDFRowView.swift in Sources */,
 				DA88341D29B71584005AD207 /* SceneDelegate.swift in Sources */,
 				DA8723EF29B821A300E55DD9 /* ScheduleModel.swift in Sources */,
 				DA8723ED29B8213A00E55DD9 /* ScheduleViewModel.swift in Sources */,
 				DAF6340E29B5D55700048CFD /* AssignmentModel.swift in Sources */,
 				DAF6341629B5DB5A00048CFD /* AssignmentListView.swift in Sources */,
+				DA6BDB5229B9C212009837A9 /* PDFModel.swift in Sources */,
 				DAF633DF29B5CFAF00048CFD /* ContentView.swift in Sources */,
 				DA88341729B7059F005AD207 /* CourseListView.swift in Sources */,
 				DAF6341429B5D9A300048CFD /* AddAssignmentView.swift in Sources */,

@@ -10,9 +10,7 @@ import SwiftUI
 import CoreData
 import UIKit
 
-/**
- * Object manages course model and facilitates interaction with view
- */
+/// Object manages course model and facilitates interaction with view
 class ScheduleViewModel: NSObject, UINavigationControllerDelegate,
     UIImagePickerControllerDelegate, ObservableObject {
     @Published var schedule: [Schedule] = []
@@ -74,8 +72,7 @@ class ScheduleViewModel: NSObject, UINavigationControllerDelegate,
         if isPreview {
             PersistenceController.preview.save()
             fetchSchedule()
-        }
-        else {
+        } else {
             PersistenceController.shared.save()
             fetchSchedule()
         }

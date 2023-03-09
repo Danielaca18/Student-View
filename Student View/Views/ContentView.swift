@@ -33,6 +33,11 @@ struct ContentView: View {
                 .tabItem {
                     Label("Courses", systemImage: "book.closed.circle.fill")
                 }
+            SyllabusView()
+                            .environment(\.managedObjectContext, viewContext)
+                            .tabItem {
+                                Label("Syllabi", systemImage: "doc.circle.fill")
+                            }
         }
     }
 }
