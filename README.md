@@ -24,3 +24,4 @@ Courses             |  Syllabus
 ## Meta
 
 Daniel Castro – DCastro@ualberta.ca
+Distributed under the GNU General license. See ``LICENSE`` for more information.
