@@ -25,4 +25,4 @@ Courses             |  Syllabus
 
 Daniel Castro – DCastro@ualberta.ca
 
-Distributed under the GNU General license. See ``LICENSE`` for more information.
+Distributed under the GPL-3.0 License. See ``LICENSE`` for more information.
