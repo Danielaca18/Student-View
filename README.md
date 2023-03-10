@@ -5,6 +5,10 @@
   </p>
 </p>
 
+Schedule             |  Assignment
+:-------------------------:|:-------------------------:
+![](https://github.com/Danielaca18/Student-View/blob/main/Schedule%20Preview.PNG)  |  ![](https://github.com/Danielaca18/Student-View/blob/main/Assignment%20Preview.PNG)
+
 <p align="row">
 <img src= "https://github.com/Danielaca18/Student-View/blob/main/Schedule%20Preview.PNG" width="400" >
 <img src= "https://github.com/Danielaca18/Student-View/blob/main/Assignment%20Preview.PNG" width="400" >
