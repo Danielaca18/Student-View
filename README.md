@@ -12,3 +12,15 @@ Schedule             |  Assignment
 Courses             |  Syllabus
 :-------------------------:|:-------------------------:
 ![](https://github.com/Danielaca18/Student-View/blob/main/Courses%20Preview.PNG)  |  ![](https://github.com/Danielaca18/Student-View/blob/main/Sylabus%20PDF%20Preview.png)
+
+## Features
+
+- [x] Schedule viewing
+- [x] Assignment tracking
+- [x] Course and gpa tracking
+- [x] Course syllabus pdf tracking
+- [] Support for more document format (.doc, .word, ...)
+
+## Meta
+
+Daniel Castro – DCastro@ualberta.ca
