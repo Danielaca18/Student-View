@@ -19,9 +19,10 @@ Courses             |  Syllabus
 - [x] Assignment tracking
 - [x] Course and gpa tracking
 - [x] Course syllabus pdf tracking
-- [] Support for more document format (.doc, .word, ...)
+- [ ] Support for more document format (.doc, .word, ...)
 
 ## Meta
 
 Daniel Castro – DCastro@ualberta.ca
+
 Distributed under the GNU General license. See ``LICENSE`` for more information.
