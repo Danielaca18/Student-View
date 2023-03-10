@@ -5,9 +5,24 @@
   </p>
 </p>
 
-<p align="row">
-<img src= "https://github.com/Danielaca18/Student-View/blob/main/Schedule%20Preview.PNG" width="400" >
-<img src= "https://github.com/Danielaca18/Student-View/blob/main/Assignment%20Preview.PNG" width="400" >
-<img src= "https://github.com/Danielaca18/Student-View/blob/main/Courses%20Preview.PNG" width="400" >
-<img src= "https://github.com/Danielaca18/Student-View/blob/main/Sylabus%20PDF%20Preview.png" width="400" >
-</p>
+Schedule             |  Assignment
+:-------------------------:|:-------------------------:
+![](https://github.com/Danielaca18/Student-View/blob/main/Schedule%20Preview.PNG)  |  ![](https://github.com/Danielaca18/Student-View/blob/main/Assignment%20Preview.PNG)
+
+Courses             |  Syllabus
+:-------------------------:|:-------------------------:
+![](https://github.com/Danielaca18/Student-View/blob/main/Courses%20Preview.PNG)  |  ![](https://github.com/Danielaca18/Student-View/blob/main/Sylabus%20PDF%20Preview.png)
+
+## Features
+
+- [x] Schedule viewing
+- [x] Assignment tracking
+- [x] Course and gpa tracking
+- [x] Course syllabus pdf tracking
+- [ ] Support for more document format (.doc, .word, ...)
+
+## Meta
+
+Daniel Castro – DCastro@ualberta.ca
+
+Distributed under the GNU General license. See ``LICENSE`` for more information.
