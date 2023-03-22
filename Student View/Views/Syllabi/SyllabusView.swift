@@ -26,6 +26,9 @@ struct SyllabusView: View {
                     NavigationLink(destination: PDFReadView(pdf: pdf)
                         .environmentObject(viewModel)) {
                         Text(pdf.name ?? "Untitled")
+                                .font(.headline)
+                                .foregroundColor(.primary)
+                                .lineLimit(1)
                     }
                 }
                 .onDelete(perform: viewModel.deletePDF)
@@ -35,7 +38,9 @@ struct SyllabusView: View {
                 showingDocumentPicker = true
             }) {
                 Image(systemName: "plus")
-            })
+            }
+                .accessibility(label: Text("Add Syllabus"))
+            )
         }
         .sheet(isPresented: $showingDocumentPicker) {
             picker.environmentObject(viewModel)

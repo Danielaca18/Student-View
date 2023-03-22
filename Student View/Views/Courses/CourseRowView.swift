@@ -55,7 +55,7 @@ struct CourseRowView: View {
                 VStack(alignment: .leading) {
                     Text(course.name ?? "")
                         .font(.headline)
-                    Text("GPA: \(course.gpa, specifier: "%.2f") | Credit: \(course.credit, specifier: "%.1f")")
+                    Text("GPA: \(course.gpa, specifier: "%.1f") | Credit: \(course.credit, specifier: "%.0f")")
                         .font(.subheadline)
                 }
                 Spacer()

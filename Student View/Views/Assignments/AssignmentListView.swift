@@ -22,12 +22,15 @@ struct AssignmentListView: View {
                 }
                 .onDelete(perform: viewModel.deleteAssignment)
             }
+            .listStyle(PlainListStyle())
             .navigationBarTitle("Assignments")
             .navigationBarItems(trailing: Button(action: {
                 showingAddAssignment = true
             }) {
                 Image(systemName: "plus")
-            })
+            }
+                .accessibility(label: Text("Add Assignment"))
+            )
         }
         .sheet(isPresented: $showingAddAssignment) {
             AddAssignmentView()
