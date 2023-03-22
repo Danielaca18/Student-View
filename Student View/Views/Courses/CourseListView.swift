@@ -20,7 +20,7 @@ struct CourseListView: View {
             VStack {
                 Text("Cumulative GPA: \(viewModel.cGpa, specifier: "%.2f")")
                     .font(.headline)
-                    .padding()
+                    .padding(.vertical)
                 
                 List {
                     ForEach(viewModel.courses, id: \.id) { course in
@@ -29,12 +29,15 @@ struct CourseListView: View {
                     }
                     .onDelete(perform: viewModel.deleteCourse)
                 }
+                .listStyle(InsetGroupedListStyle())
                 .navigationBarTitle("Courses")
                 .navigationBarItems(trailing: Button(action: {
                     showingAddCourse = true
                 }) {
                     Image(systemName: "plus")
-                })
+                }
+                    .accessibility(label: Text("Add Course"))
+                )
             }
         }
         .sheet(isPresented: $showingAddCourse) {

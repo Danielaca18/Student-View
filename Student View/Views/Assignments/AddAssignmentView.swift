@@ -20,15 +20,26 @@ struct AddAssignmentView: View {
     var body: some View {
         NavigationView {
             Form {
-                TextField("Title", text: $title)
-                DatePicker("Due Date", selection: $dueDate,
-                           displayedComponents: .date)
+                Section(header: Text("Assignment Details")) {
+                    TextField("Title", text: $title)
+                    DatePicker(
+                        "Due Date",
+                        selection: $dueDate,
+                        displayedComponents: .date
+                    )
+                }
             }
             .navigationBarTitle("Add Assignment")
-            .navigationBarItems(trailing: Button("Save") {
-                viewModel.addAssignment(title: title, dueDate: dueDate)
-                isPresented.wrappedValue.dismiss()
-            })
+            .navigationBarItems(trailing:
+                Button(action: {
+                    viewModel.addAssignment(title: title, dueDate: dueDate)
+                    isPresented.wrappedValue.dismiss()
+                }) {
+                    Text("Save")
+                        .fontWeight(.bold)
+                }
+                .accessibility(label: Text("Save Assignment"))
+            )
         }
     }
 }

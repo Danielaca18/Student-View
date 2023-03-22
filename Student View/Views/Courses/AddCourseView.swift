@@ -14,8 +14,8 @@ struct AddCourseView: View {
     @EnvironmentObject private var viewModel: CourseViewModel
     
     @State private var name = ""
-    @State private var gpa = Double()
-    @State private var credit = Double()
+    @State private var gpa = ""
+    @State private var credit = ""
     
     private let decimalFormat: NumberFormatter = {
         let decimalFormat = NumberFormatter()
@@ -26,17 +26,25 @@ struct AddCourseView: View {
     var body: some View {
         NavigationView {
             Form {
-                TextField("Course Name", text: $name)
-                TextField("Gpa", value: $gpa, formatter: decimalFormat)
-                    .keyboardType(.decimalPad)
-                TextField("Credit", value: $credit, formatter: decimalFormat)
-                    .keyboardType(.numberPad)
+                Section(header: Text("Course Details")) {
+                    TextField("Enter the course name", text: $name)
+                    TextField("Enter your gpa", text: $gpa)
+                        .keyboardType(.decimalPad)
+                    TextField("Enter your credits", text: $credit)
+                        .keyboardType(.numberPad)
+                }
             }
             .navigationBarTitle("Add Course")
-            .navigationBarItems(trailing: Button("Save") {
-                viewModel.addCourse(name: name, gpa: gpa, credit: credit)
-                isPresented.wrappedValue.dismiss()
-            })
+            .navigationBarItems(trailing:
+                Button(action: {
+                viewModel.addCourse(name: name, gpa: Double(gpa) ?? 0, credit: Double(credit) ?? 0)
+                    isPresented.wrappedValue.dismiss()
+                }) {
+                    Text("Save")
+                        .fontWeight(.bold)
+                }
+                .accessibility(label: Text("Save Course"))
+            )
         }
     }
 }

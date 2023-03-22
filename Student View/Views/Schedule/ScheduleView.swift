@@ -20,39 +20,54 @@ struct ScheduleView: View {
     }
     
     var body: some View {
-        NavigationView {
-            VStack{
+            NavigationView {
                 if viewModel.schedule[0].schedule != nil {
                     GeometryReader { geometry in
                         VStack {
                             Spacer()
                             Image(uiImage: UIImage(data: viewModel.schedule[0].schedule!)!)
                                 .resizable()
-                                .aspectRatio(contentMode: .fit)
+                                .scaledToFit()
                             Spacer()
                         }
+                        .padding()
+                        .navigationTitle("Class Schedule")
+                        .toolbar {
+                            ToolbarItem(placement: .navigationBarTrailing) {
+                                Button(action: {
+                                    showingChangeSchedule = true
+                                }) {
+                                    Image(systemName: "plus")
+                                }
+                            }
+                        }
                     }
-                    .padding()
+                } else {
+                    VStack(spacing: 20) {
+                        Spacer()
+                        Text("No class schedule found")
+                            .font(.headline)
+                        Spacer()
+                    }
+                    .navigationTitle("Class Schedule")
+                    .toolbar {
+                        ToolbarItem(placement: .navigationBarTrailing) {
+                            Button(action: {
+                                showingChangeSchedule = true
+                            }) {
+                                Image(systemName: "plus")
+                            }
+                        }
+                    }
                 }
             }
-            .navigationTitle("Class Schedule")
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: {
-                        showingChangeSchedule = true
-                    }) {
-                        Image(systemName: "plus")
+            .sheet(isPresented: $showingChangeSchedule) {
+                picker.environmentObject(viewModel)
+                    .onDisappear {
+                        showingChangeSchedule = false
                     }
-                }
             }
         }
-        .sheet(isPresented: $showingChangeSchedule) {
-            picker.environmentObject(viewModel)
-                .onDisappear {
-                    showingChangeSchedule = false
-                }
-        }
-    }
 }
 
 struct ScheduleView_Previews: PreviewProvider {
